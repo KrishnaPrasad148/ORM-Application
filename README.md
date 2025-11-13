@@ -5,9 +5,8 @@
 ---
 
 ## AIM:
-To develop a **Django application** to **store and retrieve data** from a **Movies Database** using **Object Relational Mapping (ORM)**.
+To develop a Django application to store and retrieve data from a Movies Database using Object Relational Mapping (ORM).
 
----
 
 ## DESIGN STEPS:
 
@@ -21,8 +20,7 @@ Create a new Django app named `movies_app`.
 Add the app to the `INSTALLED_APPS` section in the project’s `settings.py`.
 
 ### Step 4:
-Define a model class `Movie` with fields —  
-`movie_id`, `title`, `director`, `release_year`, `genre`, and `rating`.
+Define a model class `Movie` with fields —  `movie_id`, `title`, `director`, `release_year`, `genre`, and `rating`.
 
 ### Step 5:
 Make and apply migrations using:
@@ -32,7 +30,7 @@ python manage.py migrate
 ```
 
 ### Step 6:
-Use the Django shell to populate the database with at least **ten movie records**.
+Use the Django shell to populate the database with at least ten movie records.
 
 ### Step 7:
 Use Django ORM queries to retrieve:
@@ -56,11 +54,14 @@ Verify the results in the terminal or browser.
 
 ## PROGRAM:
 
-**Developed By:** Krishna Prasad S  
-**Register No.:** 212223230108  
+```
+Developed By : Krishna Prasad S  
+Register No. : 212223230108  
+```
 
-```python
+```py
 # models.py
+
 from django.db import models
 
 class Movie(models.Model):
@@ -75,8 +76,9 @@ class Movie(models.Model):
         return f"{self.title} ({self.release_year})"
 ```
 
-```python
-# Adding sample data (in Django shell)
+```py
+# Adding sample data in Django shell
+
 from movies_app.models import Movie
 
 movies = [
@@ -93,6 +95,7 @@ movies = [
 ]
 
 Movie.objects.bulk_create(movies)
+
 ```
 
 ---
@@ -100,34 +103,17 @@ Movie.objects.bulk_create(movies)
 ## OUTPUT:
 
 ### **All Movies**
-```
-Inception - Christopher Nolan - 2010
-The Dark Knight - Christopher Nolan - 2008
-Interstellar - Christopher Nolan - 2014
-Titanic - James Cameron - 1997
-Avatar - James Cameron - 2009
-The Godfather - Francis Ford Coppola - 1972
-Gladiator - Ridley Scott - 2000
-Parasite - Bong Joon-ho - 2019
-Forrest Gump - Robert Zemeckis - 1994
-Joker - Todd Phillips - 2019
-```
+<img width="835" height="297" alt="cmd" src="https://github.com/user-attachments/assets/83d4018c-c68b-43c2-8eda-c90d930b586d" />
+
 
 ### **Filtered Query (Director = Christopher Nolan)**
-```
-Inception
-The Dark Knight
-Interstellar
-```
+<img width="638" height="137" alt="fltered1" src="https://github.com/user-attachments/assets/8bec52db-08fd-4ca7-9c6e-e5f78eacfbdd" />
+
 
 ### **Movies Released After 2010**
-```
-Interstellar
-Parasite
-Joker
-```
+<img width="778" height="186" alt="fltered2" src="https://github.com/user-attachments/assets/af0b7ecd-6efe-46ea-ab09-7d634404da05" />
 
----
+
 
 ## RESULT:
 The Django application was successfully developed to **store and retrieve movie data** using **Object Relational Mapping (ORM)**.
