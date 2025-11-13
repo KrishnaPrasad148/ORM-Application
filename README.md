@@ -105,14 +105,12 @@ Movie.objects.bulk_create(movies)
 <img width="835" height="297" alt="cmd" src="https://github.com/user-attachments/assets/83d4018c-c68b-43c2-8eda-c90d930b586d" />
 
 
-### **Filtered Query (Director = Christopher Nolan)**
+### **Filtered Query**
 <img width="638" height="137" alt="fltered1" src="https://github.com/user-attachments/assets/8bec52db-08fd-4ca7-9c6e-e5f78eacfbdd" />
 
-
-### **Movies Released After 2010**
 <img width="778" height="186" alt="fltered2" src="https://github.com/user-attachments/assets/af0b7ecd-6efe-46ea-ab09-7d634404da05" />
 
 
 
 ## RESULT:
-The Django application was successfully developed to **store and retrieve movie data** using **Object Relational Mapping (ORM)**.
+The Django application was successfully developed to store and retrieve movie data using Object Relational Mapping (ORM).
