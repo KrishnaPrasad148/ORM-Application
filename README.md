@@ -50,7 +50,6 @@ python manage.py runserver
 ### Step 10:
 Verify the results in the terminal or browser.
 
----
 
 ## PROGRAM:
 
