@@ -1,6 +1,6 @@
 # EX02 Developing a Django Application using ORM
 
-### Date: 13/11/25  
+### Date: 28/08/25  
 
 ---
 
